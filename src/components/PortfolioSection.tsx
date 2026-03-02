@@ -105,7 +105,7 @@ const projects: Project[] = [
     media: [
       { type: "video", src: vigie1 },
     ],
-    title: "Leaderprice",
+    title: "Leaderprice Mangily",
     location: "Toliara",
     surface: "300 m²",
     duration: "20 mois",
