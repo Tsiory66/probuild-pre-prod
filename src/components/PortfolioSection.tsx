@@ -105,11 +105,11 @@ const projects: Project[] = [
     media: [
       { type: "video", src: vigie1 },
     ],
-    title: "Bureau Vigie Toliara",
+    title: "Leaderprice",
     location: "Toliara",
     surface: "300 m²",
     duration: "20 mois",
-    concept: "Centre de télésurveillance moderne",
+    concept: "Supermarché axé sur le rapport qualité-prix, offrant des produits à des prix compétitifs. ",
   },
   {
   media: [
