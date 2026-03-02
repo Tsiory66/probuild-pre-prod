@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Play, X, ChevronLeft, ChevronRight, Image as ImageIcon, Film } from "lucide-react";
 import villaHorizon from "@/assets/project-villa-horizon.jpg";
 import businessTower from "@/assets/project-business-tower.jpg";
@@ -107,12 +107,36 @@ const MediaGallery = ({ media }: { media: MediaItem[] }) => {
   const item = media[current];
   const hasMultiple = media.length > 1;
 
+  useEffect(() => {
+    // Preload the next image (prefetch) to make navigation snappier
+    if (media.length < 2) return;
+    const next = (current + 1) % media.length;
+    const m = media[next];
+    if (m.type === "image") {
+      const img = new Image();
+      img.src = m.src;
+    }
+  }, [current, media]);
+
   return (
-    <div className="relative overflow-hidden aspect-[4/3]">
+    <div
+      className="relative overflow-hidden aspect-[4/3]"
+      onMouseEnter={() => {
+        // On hover, prefetch all image thumbnails for faster lightbox open
+        media.forEach((m) => {
+          if (m.type === "image") {
+            const img = new Image();
+            img.src = m.src;
+          }
+        });
+      }}
+    >
       {item.type === "image" ? (
         <img
           src={item.src}
           alt=""
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
       ) : (
@@ -123,6 +147,7 @@ const MediaGallery = ({ media }: { media: MediaItem[] }) => {
           loop
           autoPlay
           playsInline
+          preload="metadata"
         />
       )}
 
