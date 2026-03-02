@@ -30,6 +30,14 @@ import Ramary_villa4 from "@/real/Villa RAMARY Betsingilo/1 (6).jpeg";
 import kaboss1 from "@/real/Kaboss/WhatsApp Image 2026-03-02 at 10.55.29.jpeg";
 import kaboss2 from "@/real/Kaboss/1 (4).jpeg";
 
+
+import regina1 from "@/real/regina/WhatsApp Image 2026-03-02 at 13.27.03.jpeg";
+import regina2 from "@/real/regina/WhatsApp Image 2026-03-02 at 13.27.04.jpeg";
+import regina3 from "@/real/regina/WhatsApp Image 2026-03-02 at 13.27.05.jpeg";
+import regina4 from "@/real/regina/WhatsApp Image 2026-03-02 at 13.27.06.jpeg";
+import regina5 from "@/real/regina/WhatsApp Image 2026-03-02 at 13.27.21.jpeg";
+
+
 import vigie1 from "@/real/Vigie toliara/WhatsApp Video 2026-03-02 at 10.54.17.mp4";
 
 type MediaItem = {
@@ -49,14 +57,15 @@ type Project = {
 const projects: Project[] = [
   {
     media: [
+      { type: "video", src: Ramary_villa7 },
         { type: "image", src: Ramary_villa },
         { type: "image", src: Ramary_villa1 },
         { type: "image", src: Ramary_villa2 },
         { type: "image", src: Ramary_villa3 },
-        { type: "image", src: Ramary_villa5 },
+       
     
         { type: "video", src: Ramary_villa6 },
-        { type: "video", src: Ramary_villa7 },
+        
         { type: "video", src: Ramary_villa8 },
        
     ],
@@ -100,6 +109,21 @@ const projects: Project[] = [
     duration: "20 mois",
     concept: "Centre de télésurveillance moderne",
   },
+  {
+  media: [
+      { type: "image", src: regina1 },
+      { type: "image", src: regina2 },
+      { type: "image", src: regina3 },
+      { type: "image", src: regina4 },
+      { type: "image", src: regina5 },
+    ],
+    title: "Regina Lodge",
+    location: "Mamirano",
+    surface: "300 m²",
+    duration: "20 mois",
+    concept: "",
+  }
+  
 ];
 
 const MediaGallery = ({ media }: { media: MediaItem[] }) => {
