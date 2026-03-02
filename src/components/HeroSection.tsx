@@ -35,7 +35,7 @@ const HeroSection = () => {
                 <span className="text-brand-yellow">Notre réalité !</span>
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/70 max-w-xl mb-10 font-sans leading-relaxed">
-                Construction contemporaine et de qualité à Madagascar.
+                 Architecture contemporaine et construction de qualité à Madagascar.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
