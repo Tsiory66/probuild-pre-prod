@@ -30,7 +30,7 @@ const HeroSection = () => {
             >
               <div className="w-16 h-px bg-brand-yellow mb-8" />
               <h1 className="heading-display text-primary-foreground mb-6">
-                Votre projet<br />
+                Vos projets<br />
     
                 <span className="text-brand-yellow">Notre réalité !</span>
               </h1>
