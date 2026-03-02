@@ -30,12 +30,12 @@ const HeroSection = () => {
             >
               <div className="w-16 h-px bg-brand-yellow mb-8" />
               <h1 className="heading-display text-primary-foreground mb-6">
-                Concevoir.<br />
-                Construire.<br />
-                <span className="text-brand-yellow">Transmettre.</span>
+                Votre projet<br />
+    
+                <span className="text-brand-yellow">Notre réalité !</span>
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/70 max-w-xl mb-10 font-sans leading-relaxed">
-                Architecture contemporaine et construction haut de gamme à Madagascar.
+                Construction contemporaine et de qualité à Madagascar.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a
