@@ -32,17 +32,13 @@ const Navbar = () => {
       }`}
     >
       <div className="flex items-center justify-between px-6 md:px-12 lg:px-24 py-3">
-        <a href="#" className="flex items-center gap-3">
-          <img src={logo} alt="PRAGMATEC Construction" className="h-12 w-12 object-cover rounded" />
-          <div className="flex flex-col leading-tight">
-            <span className={`font-sans text-lg font-bold tracking-tight ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>
-              PRAGMATEC
-            </span>
-            <span className={`block text-[10px] uppercase tracking-[0.3em] ${scrolled ? "text-muted-foreground" : "text-primary-foreground/60"}`}>
-              Construction
-            </span>
-          </div>
-        </a>
+      <a href="#" className="flex items-center gap-3">
+  <img 
+    src={logo} 
+    alt="PRAGMATEC Construction" 
+    className="h-40 w-auto object-contain"
+  />
+</a>
 
         <div className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
