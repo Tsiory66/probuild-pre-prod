@@ -84,7 +84,7 @@ const projects: Project[] = [
       { type: "image", src: piscine4 },
     ],
     title: "Piscine Betania",
-    location: "Betanoa",
+    location: "Toliara",
     surface: "20 m²",
     duration: "1 mois",
     concept: "Piscine haut de gamme avec espaces verts",
