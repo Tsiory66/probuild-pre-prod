@@ -36,7 +36,7 @@ const Navbar = () => {
   <img 
     src={logo} 
     alt="PRAGMATEC Construction" 
-    className="h-40 w-auto object-contain"
+    className="h-28 w-auto object-contain"
   />
 </a>
 
