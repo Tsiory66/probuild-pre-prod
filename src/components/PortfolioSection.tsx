@@ -28,8 +28,9 @@ import piscine4 from "@/real/piscine betania/WhatsApp Image 2026-03-02 at 10.36.
 import Ramary_villa4 from "@/real/Villa RAMARY Betsingilo/1 (6).jpeg";
 
 import kaboss1 from "@/real/Kaboss/WhatsApp Image 2026-03-02 at 10.55.29.jpeg";
-import kaboss2 from "@/real/Kaboss/1 (4).jpeg";
+import kaboss2 from "@/real/Kaboss/WhatsApp Image 2026-03-02 at 10.51.56.jpeg";
 
+import kaboss3 from "@/real/Kaboss/WhatsApp Video 2026-03-02 at 11.32.04.mp4";
 
 import regina1 from "@/real/regina/WhatsApp Image 2026-03-02 at 13.27.03.jpeg";
 import regina2 from "@/real/regina/WhatsApp Image 2026-03-02 at 13.27.04.jpeg";
@@ -92,6 +93,7 @@ const projects: Project[] = [
     media: [
       { type: "image", src: kaboss1 },
       { type: "image", src: kaboss2  },
+      { type: "video", src: kaboss3 },
     ],
     title: "Le Kaboss",
     location: "Ifaty",
@@ -103,11 +105,11 @@ const projects: Project[] = [
     media: [
       { type: "video", src: vigie1 },
     ],
-    title: "Leaderprice",
+    title: "Bureau Vigie Toliara",
     location: "Toliara",
     surface: "300 m²",
     duration: "20 mois",
-    concept: "Supermarché axé sur le rapport qualité-prix, offrant des produits à des prix compétitifs. ",
+    concept: "Centre de télésurveillance moderne",
   },
   {
   media: [
