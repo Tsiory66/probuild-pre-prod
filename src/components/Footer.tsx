@@ -13,7 +13,7 @@ const Footer = () => (
             </div>
           </div>
           <p className="text-sm text-primary-foreground/50 leading-relaxed">
-            Architecture contemporaine et construction haut de gamme à Tuléar, Madagascar.
+            Architecture contemporaine et construction de qualité à Madagascar.
           </p>
         </div>
         <div>
